@@ -82,3 +82,26 @@ header nav ul li a {
 }
 
 /* Welcome Section */
+
+/*About Me */
+
+#self-portrait {
+  width: 750px;
+  height: 500px;
+  
+}
+
+/* Project work section */
+
+.projects ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.project-square {
+  background-color: rgba(255, 107, 107, 0.7);
+  margin-bottom: 100px;
+  margin-top: 100px;
+  text-align: center;
+}

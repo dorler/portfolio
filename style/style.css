@@ -7,6 +7,10 @@
   --tertiary-color: #ededf4;
 }
 
+* {
+  max-width: 100%;
+}
+
 .flex-row {
   display: flex;
 }
@@ -27,6 +31,7 @@ body {
   background-position: 100%;
   background-size: cover;
   z-index: 999;
+  text-align: center;
 }
 
 /*Navigation Bar*/
@@ -37,8 +42,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  position: -webkit-sticky;
-  position: sticky;
   top: 0;
 }
 
@@ -83,12 +86,20 @@ header nav ul li a {
 
 /* Welcome Section */
 
+.welcome {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
 /*About Me */
 
 #self-portrait {
   width: 750px;
   height: 500px;
-  
+}
+
+.about-me {
+  margin-bottom: 50px;
 }
 
 /* Project work section */
@@ -97,11 +108,43 @@ header nav ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 100px;
 }
 
 .project-square {
   background-color: rgba(255, 107, 107, 0.7);
-  margin-bottom: 100px;
-  margin-top: 100px;
+
+  display: block;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 35px;
   text-align: center;
+}
+.projects ul :hover {
+  background-color: #014d4e;
+  border-radius: 5px;
+  text-shadow: none;
+  flex-grow: 1;
+}
+
+/* Footer Panel */
+
+.reach-out {
+  padding: 20px, 35px;
+  background-color: #014d4e;
+  display: flex;
+  justify-content: space-around;
+}
+
+.reach-out a {
+  color: #ededf4;
+}
+
+h2 {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.5vw;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
